@@ -22,7 +22,7 @@ With this setup, I reached a success rate of around 99% (only making real mistak
 
 ## Requirements & Installation
 
-1. **Python 3.10+** installed on your system.
+1. **Python 3.10+** installed on your system. I think this can everybody do for themselfs (if you want to add a tutorial here, feel free to open a pullrequest).
 2. Install the official Google GenAI SDK:
 ```bash
 pip install google-genai
