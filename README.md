@@ -60,7 +60,9 @@ crontab -e
 
 2. Add a line to run the script automatically (example: every hour):
 ```bash
-0 * * * * /usr/bin/python3 /path/to/recipe_converter.py >> /path/to/logfile.log 2>&1
+0 * * * * /usr/bin/python3 /path/to/recipe_converter.py >> /var/log/recipe_converter.log 2>&1
+or
+0 * * * * /root/recipe_env/bin/python3 /path/to/recipe_converter.py >> /var/log/recipe_converter.log 2>&1
 
 ```
 
