@@ -13,22 +13,22 @@ I tried a few different approaches:
 With this setup, I reached a success rate of around 99% (only making real mistakes with bad handwriting) and barely have to correct anything manually anymore.
 
 ## Features
-* **Multi-Format Support:** Converts recipe images (`.jpg`, `.jpeg`, `.png`, `.webp`, `.heic`, `.heif`) as well as documents (`.pdf`, `.txt`, `.md`, `.html`, `.csv`, `.rtf`)
-* **Nextcloud Cookbook Compliance:** Formats ingredients, step-by-step instructions, preparation times, cooking times, and yields according to Schema.org standards
-* **Rate-Limit Safe:** Uses a local log file (.rpd_log.json) to enforce a maximum daily quota (e.g. 20 RPD) across multiple runs, alongside the 12-second delay for the 5 RPM limit
-* **Automatic Cleanup:** Deletes local files upon successful processing and cleans up remote assets on Gemini servers
-* **Cross-Platform:** Runs seamlessly on Linux and Windows
-* **Fully Automatic**
+- **Multi-Format Support:** Converts recipe images (`.jpg`, `.jpeg`, `.png`, `.webp`, `.heic`, `.heif`) as well as documents (`.pdf`, `.txt`, `.md`, `.html`, `.csv`, `.rtf`)
+- **Nextcloud Cookbook Compliance:** Formats ingredients, step-by-step instructions, preparation times, cooking times, and yields according to Schema.org standards
+- **Rate-Limit Safe:** Uses a local log file (.rpd_log.json) to enforce a maximum daily quota (e.g. 20 RPD) across multiple runs, alongside the 12-second delay for the 5 RPM limit
+- **Automatic Cleanup:** Deletes local files upon successful processing and cleans up remote assets on Gemini servers
+- **Cross-Platform:** Runs seamlessly on Linux and Windows
+- **Fully Automatic**
+
 
 ## Requirements & Installation
 
-1. **Python 3.10+** installed on your system. I think this can everybody do for themselfs (if you want to add a tutorial here, feel free to open a pullrequest). (sudo apt update
-sudo apt install python3 python3-venv python3-pip -y python3 -m venv recipe_env
-source recipe_env/bin/activate for Debain 13 should work fine (activate via source ~/recipe_env/bin/activate). For Windows just download the .exe)
-2. Install the official Google GenAI SDK:
+1. **Python 3.10+** installed on your system. I think this can everybody do for themselfs (if you want to add a tutorial here, feel free to open a pullrequest).
+(sudo apt update && sudo apt install python3 python3-venv python3-pip -y && python3 -m venv recipe_env source recipe_env/bin/activate
+for Debain 13 should work fine (activate via source ~/recipe_env/bin/activate). For Windows just download the .exe)
+4. Install the official Google GenAI SDK:
 ```bash
 pip install google-genai
-
 ```
 3. Set your Google Gemini API Key in the script or pass it via environment variables.
 4. *(Optional)* Change settings in the script (look at the comments for help, such as changing the Gemini version).
