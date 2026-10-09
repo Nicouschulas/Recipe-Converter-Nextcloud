@@ -26,11 +26,11 @@ With this setup, I reached a success rate of around 99% (only making real mistak
 1. **Python 3.10+** installed on your system. I think this can everybody do for themselfs (if you want to add a tutorial here, feel free to open a pullrequest).
 (sudo apt update && sudo apt install python3 python3-venv python3-pip -y && python3 -m venv recipe_env source recipe_env/bin/activate
 for Debain 13 should work fine (activate via source ~/recipe_env/bin/activate). For Windows just download the .exe)
-4. Install the official Google GenAI SDK:
+2. Install the official Google GenAI SDK:
 ```bash
 pip install google-genai
 ```
-3. Set your Google Gemini API Key in the script or pass it via environment variables.
+3. Set your Google Gemini API Key in the script.
 4. *(Optional)* Change settings in the script (look at the comments for help, such as changing the Gemini version).
 
 
