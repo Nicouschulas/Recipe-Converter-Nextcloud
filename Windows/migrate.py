@@ -50,7 +50,7 @@ EXPECTED JSON SCHEMA:
 }
 
 STRICT CONVERSION RULES:
-1. Read all German text accurately directly from the file.
+1. Read all text accurately directly from the file.
 2. Separate ingredients and instructions clearly.
 3. Do NOT include prefixes like 'e.x.' or 'Step 1:' in the output strings.
 4. Keep recipeIngredient as a flat array of strings.
