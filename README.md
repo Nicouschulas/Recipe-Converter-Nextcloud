@@ -58,9 +58,9 @@ crontab -e
 
 2. Add a line to run the script automatically (example: every hour):
 ```bash
-0 * * * * /usr/bin/python3 /path/to/recipe_converter.py >> /var/log/recipe_converter.log 2>&1 && sudo -u www-data php /var/www/nextcloud/occ files:scan --path="/your/path/to/files/from/nextcloudcookbook" && sudo -u www-data php /var/www/nextcloud/occ files:scan --path="/your/path/to/files/from/recipe/converter"
+0 * * * * /usr/bin/python3 /path/to/recipe_converter.py >> /var/log/recipe_converter.log 2>&1 && chown -R www-data:www-data /path/to/your/recipes /path/to/your/converter && sudo -u www-data php /var/www/nextcloud/occ files:scan --path="/your/path/to/files/from/nextcloudcookbook" && sudo -u www-data php /var/www/nextcloud/occ files:scan --path="/your/path/to/files/from/recipe/converter"
 or
-0 * * * * /root/recipe_env/bin/python3 /path/to/recipe_converter.py >> /var/log/recipe_converter.log 2>&1 && sudo -u www-data php /var/www/nextcloud/occ files:scan --path="/your/path/to/files/from/nextcloudcookbook" && sudo -u www-data php /var/www/nextcloud/occ files:scan --path="/your/path/to/files/from/recipe/converter"
+0 * * * * /root/recipe_env/bin/python3 /path/to/recipe_converter.py >> /var/log/recipe_converter.log 2>&1 && chown -R www-data:www-data /path/to/your/recipes /path/to/your/converter && sudo -u www-data php /var/www/nextcloud/occ files:scan --path="/your/path/to/files/from/nextcloudcookbook" && sudo -u www-data php /var/www/nextcloud/occ files:scan --path="/your/path/to/files/from/recipe/converter"
 
 ```
 
